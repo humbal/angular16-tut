@@ -8,4 +8,5 @@ import { EmployeeInterface } from '../employee-interface';
 })
 export class EmployeeCardComponent {
   @Input() employee!: EmployeeInterface;
+  @Input() index!: number;
 }
