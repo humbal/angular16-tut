@@ -131,10 +131,18 @@
 </style>
 
 <div class="content" role="main">
-  <div class="card highlight-card card-small">
-    <span>{{ title }} app is running!</span>
+  <div class="section">
+    <!-- Menulink -->
+    <div>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Employee</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="section">
+    <app-employee></app-employee>
   </div>
 </div>
 
-<app-employee></app-employee>
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>

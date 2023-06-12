@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { EmployeeInterface } from '../employee-interface';
 import { EmployeeService } from '../employee.service';
 
@@ -8,9 +8,7 @@ import { EmployeeService } from '../employee.service';
   styleUrls: ['./employee.component.scss']
 })
 export class EmployeeComponent {
-  employeeList: EmployeeInterface[] = [];
-
-  // Inject DI
+  employeeList: EmployeeInterface[] =  [];
   employeeService: EmployeeService = inject(EmployeeService);
 
   constructor() {

@@ -1,11 +1,6 @@
-<section>
-  <div class="row">
-    <div 
-    class="listing" 
-    *ngFor="let employee of employeeList">
-    <img class="listing-profile" src="{{ employee.employeeProfile }}" alt="profile image of {{ employee.employeeName }}">
-    <h2 class="listing-employee-name">{{ employee.employeeName }}</h2>
-    <p class="listing-employee-dept">{{ employee.employeeDepartment }}</p>
-  </div>
-  </div>
-</section>
+<div class="listing">
+  <app-employee-card
+    *ngFor="let employee of employeeList | slice:0:5;"
+    [employee]="employee">
+  </app-employee-card>
+</div>
